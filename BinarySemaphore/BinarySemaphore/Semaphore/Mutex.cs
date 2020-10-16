@@ -7,7 +7,7 @@ namespace BinarySemaphore
     {
         private const bool Free = true;
         private const bool Busy = false;
-        private AtomicBool _atomicBool = new AtomicBool(false);
+        private readonly AtomicBool _atomicBool = new AtomicBool(false);
 
         public Mutex() { }
         

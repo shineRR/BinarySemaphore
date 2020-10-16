@@ -38,7 +38,6 @@ namespace BinarySemaphore
             _isActive = false;
             Thread.Sleep(100);
             _mutex.Unlock();
-            Console.WriteLine("[Disposed] " + Thread.CurrentThread.Name);
         }
     }
 }
