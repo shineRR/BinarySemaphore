@@ -2,7 +2,7 @@
 
 namespace BinarySemaphore
 {
-    public interface IMutex: IDisposable
+    public interface IMutex
     {
         void Lock();
         void Unlock();

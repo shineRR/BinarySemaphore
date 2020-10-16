@@ -15,26 +15,19 @@ namespace BinarySemaphore
         {
             while (_atomicBool.SetTrue() == Busy)
             {
-                Console.WriteLine("[BUSY]Semaphore is busy said " + Thread.CurrentThread.Name);
-                Thread.Sleep(1000);
+                Console.WriteLine("[BUSY]Semaphore said " + Thread.CurrentThread.Name);
+                Thread.Sleep(200);
             }
-            Console.WriteLine("[TOOK]Semaphore took said " + Thread.CurrentThread.Name);
+            Console.WriteLine("[TOOK]Semaphore said " + Thread.CurrentThread.Name);
         }
 
         public void Unlock()
         {
-            Thread.Sleep(1000);
-            while (_atomicBool.SetFalse() == Free)
-            {
-               
-            }
+            while (_atomicBool.SetFalse() == Free) { }
+
             Console.WriteLine("[FREE]Semaphore said " + Thread.CurrentThread.Name);
-            Thread.Sleep(100);
+            Thread.Sleep(400);
             
-        }
-        
-        public void Dispose()
-        {
         }
     }
 }

@@ -7,11 +7,8 @@ namespace BinarySemaphore
     {
         public static void Main(string[] args)
         {
-            SemaphoreTest semaphore = new SemaphoreTest(5);
-            foreach (var thread in semaphore.ThreadQueue)
-            {
-                thread.Join();
-            }
+            SemaphoreServiceTest semaphoreTest = new SemaphoreServiceTest(2);
+            semaphoreTest.Dispose();
         }
     }
 }

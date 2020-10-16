@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 
 namespace BinarySemaphore
 {
@@ -8,11 +9,6 @@ namespace BinarySemaphore
         public Thread[] ThreadQueue;
         private bool _isActive = true;
         private readonly Mutex _mutex = new Mutex();
-
-        public SemaphoreTest()
-        {
-            ThreadQueue = new Thread[DefaultThreadCount];
-        }
 
         public SemaphoreTest(int threadCount)
         {
@@ -30,9 +26,9 @@ namespace BinarySemaphore
             while (_isActive)
             {
                 _mutex.Lock();
-                Thread.Sleep(5000);
                 _mutex.Unlock();
             }
+            Console.WriteLine("[Disposed] " + Thread.CurrentThread.Name);
         }
 
         public void Dispose()
@@ -40,6 +36,7 @@ namespace BinarySemaphore
             _mutex.Lock();
             _isActive = false;
             _mutex.Unlock();
+            Console.WriteLine("[Disposed] " + Thread.CurrentThread.Name);
         }
     }
 }

@@ -20,6 +20,7 @@
           <e p="IMutex.cs" t="Include" />
           <e p="Mutex.cs" t="Include" />
           <e p="Semaphore Test" t="Include">
+            <e p="SemaphoreServiceTest.cs" t="Include" />
             <e p="SemaphoreTest.cs" t="Include" />
           </e>
         </e>
