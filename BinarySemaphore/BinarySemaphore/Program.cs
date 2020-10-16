@@ -7,7 +7,7 @@ namespace BinarySemaphore
     {
         public static void Main(string[] args)
         {
-            SemaphoreServiceTest semaphoreTest = new SemaphoreServiceTest(2);
+            SemaphoreServiceTest semaphoreTest = new SemaphoreServiceTest(10);
             semaphoreTest.Dispose();
         }
     }

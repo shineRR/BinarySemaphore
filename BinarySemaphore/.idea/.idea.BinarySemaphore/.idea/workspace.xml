@@ -26,11 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704aab0-0cab-45ac-8114-7659583416fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BinarySemaphore/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BinarySemaphore/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BinarySemaphore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BinarySemaphore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinarySemaphore/BinarySemaphore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BinarySemaphore/BinarySemaphore.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinarySemaphore/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BinarySemaphore/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinarySemaphore/Semaphore/IMutex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BinarySemaphore/Semaphore/IMutex.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinarySemaphore/Semaphore/Mutex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BinarySemaphore/Semaphore/Mutex.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BinarySemaphore/Semaphore/Semaphore Test/SemaphoreTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BinarySemaphore/Semaphore/Semaphore Test/SemaphoreTest.cs" afterDir="false" />
     </list>
@@ -55,10 +52,10 @@
         <option value="$PROJECT_DIR$/BinarySemaphore/AtomicBool/IAtomicBool.cs" />
         <option value="$PROJECT_DIR$/BinarySemaphore/Pool/TaskQueue.cs" />
         <option value="$PROJECT_DIR$/BinarySemaphore/Semaphore/IMutex.cs" />
-        <option value="$PROJECT_DIR$/BinarySemaphore/Semaphore/Mutex.cs" />
-        <option value="$PROJECT_DIR$/BinarySemaphore/Semaphore/Semaphore Test/SemaphoreTest.cs" />
         <option value="$PROJECT_DIR$/BinarySemaphore/Semaphore/Semaphore Test/SemaphoreServiceTest.cs" />
         <option value="$PROJECT_DIR$/BinarySemaphore/Program.cs" />
+        <option value="$PROJECT_DIR$/BinarySemaphore/Semaphore/Mutex.cs" />
+        <option value="$PROJECT_DIR$/BinarySemaphore/Semaphore/Semaphore Test/SemaphoreTest.cs" />
       </list>
     </option>
   </component>
@@ -104,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602871881620</updated>
-      <workItem from="1602871884268" duration="11188000" />
+      <workItem from="1602871884268" duration="11410000" />
     </task>
     <servers />
   </component>
@@ -128,22 +125,22 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="353" key="GridCell.Tab.0.bottom" timestamp="1602883570419">
+    <state width="1877" height="2" key="GridCell.Tab.0.bottom" timestamp="1602883846162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602883570419" />
-    <state width="1877" height="353" key="GridCell.Tab.0.center" timestamp="1602883570419">
+    <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602883846162" />
+    <state width="1877" height="2" key="GridCell.Tab.0.center" timestamp="1602883846161">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602883570419" />
-    <state width="1877" height="353" key="GridCell.Tab.0.left" timestamp="1602883570418">
+    <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602883846161" />
+    <state width="1877" height="2" key="GridCell.Tab.0.left" timestamp="1602883846161">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602883570418" />
-    <state width="1877" height="353" key="GridCell.Tab.0.right" timestamp="1602883570419">
+    <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602883846161" />
+    <state width="1877" height="2" key="GridCell.Tab.0.right" timestamp="1602883846162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="353" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602883570419" />
+    <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602883846162" />
     <state width="1877" height="253" key="GridCell.Tab.1.bottom" timestamp="1602883261456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

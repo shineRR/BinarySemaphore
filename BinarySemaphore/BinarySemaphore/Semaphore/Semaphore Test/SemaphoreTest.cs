@@ -26,6 +26,7 @@ namespace BinarySemaphore
             while (_isActive)
             {
                 _mutex.Lock();
+                Thread.Sleep(100);
                 _mutex.Unlock();
             }
             Console.WriteLine("[Disposed] " + Thread.CurrentThread.Name);
@@ -35,6 +36,7 @@ namespace BinarySemaphore
         {
             _mutex.Lock();
             _isActive = false;
+            Thread.Sleep(100);
             _mutex.Unlock();
             Console.WriteLine("[Disposed] " + Thread.CurrentThread.Name);
         }

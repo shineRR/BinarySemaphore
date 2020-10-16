@@ -26,7 +26,7 @@ namespace BinarySemaphore
             while (_atomicBool.SetFalse() == Free) { }
 
             Console.WriteLine("[FREE]Semaphore said " + Thread.CurrentThread.Name);
-            Thread.Sleep(400);
+            Thread.Sleep(300);
             
         }
     }
