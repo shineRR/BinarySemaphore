@@ -7,7 +7,11 @@ namespace BinarySemaphore
     {
         public static void Main(string[] args)
         {
-            AtomicBool atomicBool = new AtomicBool(true);
+            SemaphoreTest semaphore = new SemaphoreTest(5);
+            foreach (var thread in semaphore.ThreadQueue)
+            {
+                thread.Join();
+            }
         }
     }
 }

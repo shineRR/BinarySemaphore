@@ -7,6 +7,7 @@
       <e p="BinarySemaphore" t="IncludeRecursive">
         <e p="AtomicBool" t="Include">
           <e p="AtomicBool.cs" t="Include" />
+          <e p="IAtomicBool.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="BinarySemaphore.csproj" t="IncludeRecursive" />
@@ -18,6 +19,9 @@
         <e p="Semaphore" t="Include">
           <e p="IMutex.cs" t="Include" />
           <e p="Mutex.cs" t="Include" />
+          <e p="Semaphore Test" t="Include">
+            <e p="SemaphoreTest.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="BinarySemaphore.sln" t="IncludeFlat" />

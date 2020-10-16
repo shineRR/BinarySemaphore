@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace BinarySemaphore
 {
-    public class AtomicBool
+    public class AtomicBool: IAtomicBool
     {
         private const int TrueValue = 1;
         private const int FalseValue = 0;
@@ -20,20 +20,21 @@ namespace BinarySemaphore
             set => _state = value ? TrueValue : FalseValue;
         }
 
-        public void SetTrue()
+        public bool SetTrue()
         {
-            SetValue(true, Value);
+            return SetValue(true, false);
         }
         
-        public void SetFalse()
+        public bool SetFalse()
         {
-            SetValue(false, Value);
+            return SetValue(false, true);
         }
-
-        private void SetValue(bool setValue, bool existValue)
+        private bool SetValue(bool setValue, bool existValue)
         {
             int comparand = existValue ? TrueValue : FalseValue;
-            Interlocked.CompareExchange(ref _state, (setValue ? TrueValue : FalseValue), comparand);
+            int result = Interlocked.CompareExchange(ref _state, (setValue ? TrueValue : FalseValue), comparand);
+            bool preResult = result == TrueValue;
+            return preResult == existValue;
         }
     }
 }

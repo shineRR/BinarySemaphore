@@ -1,24 +1,36 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 
 namespace BinarySemaphore
 {
     public class Mutex: IMutex
     {
-        public int _bit;//{ get; set; }
+        private const bool Free = true;
+        private const bool Busy = false;
+        private AtomicBool _atomicBool = new AtomicBool(false);
 
-        public Mutex(int bit)
-        {
-            _bit = bit;
-        }
+        public Mutex() { }
         
-        public void Enter()
+        public void Lock()
         {
-            Interlocked.CompareExchange(ref _bit, 0, 1);
+            while (_atomicBool.SetTrue() == Busy)
+            {
+                Console.WriteLine("[BUSY]Semaphore is busy said " + Thread.CurrentThread.Name);
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("[TOOK]Semaphore took said " + Thread.CurrentThread.Name);
         }
 
-        public void Leave()
+        public void Unlock()
         {
-            throw new System.NotImplementedException();
+            Thread.Sleep(1000);
+            while (_atomicBool.SetFalse() == Free)
+            {
+               
+            }
+            Console.WriteLine("[FREE]Semaphore said " + Thread.CurrentThread.Name);
+            Thread.Sleep(100);
+            
         }
         
         public void Dispose()
