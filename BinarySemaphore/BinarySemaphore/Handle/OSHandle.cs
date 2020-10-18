@@ -4,17 +4,15 @@ using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Threading;
+using Microsoft.Win32.SafeHandles;
 
 namespace BinarySemaphore
 {
-    public class OSHandle: IOSHandle
+    public class OSHandle: IDisposable
     {
         public IntPtr Handle { get; set; }
 
-
-        public OSHandle()
-        {
-        }
+        public OSHandle() { }
         public OSHandle(IntPtr osId)
         {
             this.Handle = osId;
@@ -22,22 +20,17 @@ namespace BinarySemaphore
         
         ~OSHandle()
         {
-            this.Dispose();
+            Dispose();
         }
         
         [DllImport("kernel32", SetLastError = true)]
         static extern bool CloseHandle(IntPtr handle);
-        
-        [DllImport("user32.dll")]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        static extern bool IsWindow(IntPtr hWnd);
 
         public void Dispose()
         {
-            bool isClosed = CloseHandle(Handle);
-            if (!isClosed)
+            if (Handle != IntPtr.Zero && CloseHandle(Handle))
             {
-                Console.WriteLine("Handler is already closed");
+                Console.WriteLine("Closed");
             }
         }
     }

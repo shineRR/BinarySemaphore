@@ -14,8 +14,7 @@
         <e p="Handle" t="Include">
           <e p="HandleTest" t="Include">
             <e p="OSHandleServiceTest.cs" t="Include" />
-            <e p="OSHandleTest.cs" t="Include" />
-          <e p="IOSHandle.cs" t="Include" />
+          </e>
           <e p="OSHandle.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive" />

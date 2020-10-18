@@ -41,8 +41,6 @@
         <Compile Include="AtomicBool\AtomicBool.cs" />
         <Compile Include="AtomicBool\IAtomicBool.cs" />
         <Compile Include="Handle\HandleTest\OSHandleServiceTest.cs" />
-        <Compile Include="Handle\HandleTest\OSHandleTest.cs" />
-        <Compile Include="Handle\IOSHandle.cs" />
         <Compile Include="Handle\OSHandle.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
