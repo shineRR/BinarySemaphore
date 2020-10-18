@@ -1,10 +1,5 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.IO;
 using System.Runtime.InteropServices;
-using System.Threading;
-using Microsoft.Win32.SafeHandles;
 
 namespace BinarySemaphore
 {
@@ -30,7 +25,7 @@ namespace BinarySemaphore
         {
             if (Handle != IntPtr.Zero && CloseHandle(Handle))
             {
-                Console.WriteLine("Closed");
+                Console.WriteLine("[DISPOSE/FINALIZE]Closed");
             }
         }
     }

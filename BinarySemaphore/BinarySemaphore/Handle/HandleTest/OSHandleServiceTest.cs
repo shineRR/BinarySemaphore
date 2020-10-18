@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
-using System.Runtime.InteropServices;
 using System.Text;
 
 namespace BinarySemaphore
@@ -31,7 +29,7 @@ namespace BinarySemaphore
             }
             catch (Exception e)
             {
-                Console.WriteLine("Invalid Handler");
+                Console.WriteLine("[EXCEPTION]Invalid Handler");
             }
         }
     }

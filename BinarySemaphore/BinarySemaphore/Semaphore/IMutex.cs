@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace BinarySemaphore
 {
     public interface IMutex
