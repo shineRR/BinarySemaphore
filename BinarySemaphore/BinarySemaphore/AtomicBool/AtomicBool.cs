@@ -14,7 +14,7 @@ namespace BinarySemaphore
             Value = value;
         }
 
-        public bool Value
+        private bool Value
         {
             get => _state == TrueValue;
             set => _state = value ? TrueValue : FalseValue;

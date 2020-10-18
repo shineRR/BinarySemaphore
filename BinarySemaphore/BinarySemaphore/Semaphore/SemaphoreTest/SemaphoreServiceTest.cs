@@ -9,6 +9,7 @@ namespace BinarySemaphore
         public SemaphoreServiceTest(int threadCount)
         { 
             _semaphore = new SemaphoreTest(threadCount);
+            Dispose();
         }
 
         public void Dispose()

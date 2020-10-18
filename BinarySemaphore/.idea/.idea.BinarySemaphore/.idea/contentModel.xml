@@ -11,6 +11,13 @@
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="BinarySemaphore.csproj" t="IncludeRecursive" />
+        <e p="Handle" t="Include">
+          <e p="HandleTest" t="Include">
+            <e p="OSHandleServiceTest.cs" t="Include" />
+            <e p="OSHandleTest.cs" t="Include" />
+          <e p="IOSHandle.cs" t="Include" />
+          <e p="OSHandle.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -19,7 +26,7 @@
         <e p="Semaphore" t="Include">
           <e p="IMutex.cs" t="Include" />
           <e p="Mutex.cs" t="Include" />
-          <e p="Semaphore Test" t="Include">
+          <e p="SemaphoreTest" t="Include">
             <e p="SemaphoreServiceTest.cs" t="Include" />
             <e p="SemaphoreTest.cs" t="Include" />
           </e>
