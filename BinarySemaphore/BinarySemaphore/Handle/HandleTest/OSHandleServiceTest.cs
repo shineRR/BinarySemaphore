@@ -6,12 +6,12 @@ namespace BinarySemaphore
 {
     public class OSHandleServiceTest
     {
-        private const string Path = @"D:\test\text.txt";
+        private const string Path = @"C:\Users\shine\Desktop\Dev\text.txt";
         private static readonly OSHandle OsHandle = new OSHandle();
         
         public OSHandleServiceTest(string text)
         {
-            FileStream fs = File.Open(Path, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            var fs = File.Open(Path, FileMode.OpenOrCreate, FileAccess.ReadWrite);
             
             OsHandle.Handle = fs.Handle;
             OsHandle.Dispose();

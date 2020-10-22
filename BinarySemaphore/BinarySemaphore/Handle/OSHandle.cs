@@ -8,6 +8,7 @@ namespace BinarySemaphore
         public IntPtr Handle { get; set; }
 
         public OSHandle() { }
+        
         public OSHandle(IntPtr osId)
         {
             this.Handle = osId;
@@ -15,6 +16,7 @@ namespace BinarySemaphore
         
         ~OSHandle()
         {
+            Console.Write("[Finalize]");
             Dispose();
         }
         
@@ -27,6 +29,7 @@ namespace BinarySemaphore
             {
                 Console.WriteLine("[DISPOSE/FINALIZE]Closed");
             }
+            GC.SuppressFinalize(this);
         }
     }
 }

@@ -5,7 +5,7 @@ namespace BinarySemaphore
     {
         public static void Main(string[] args)
         {
-            SemaphoreServiceTest mutex = new SemaphoreServiceTest(10);
+            SemaphoreServiceTest mutex = new SemaphoreServiceTest(200);
             OSHandleServiceTest osHandleServiceTest = new OSHandleServiceTest("New text");
         }
     }

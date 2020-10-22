@@ -42,12 +42,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/af/eb0e9918/ObjectDisposedException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/fb/6eed0ec7/SafeHandle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50FE65A4-93A0-4952-84F1-E3562EFBE38D/8d/3516e392/Boolean.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50FE65A4-93A0-4952-84F1-E3562EFBE38D/0d/d6460ee3/Interlocked.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/82/6ce52310/StubHelpers.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/03/504c0c85/Interlocked.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/8c/725727cd/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -64,10 +59,10 @@
         <option value="$PROJECT_DIR$/BinarySemaphore/Handle/HandleTest/TestOSHandle.cs" />
         <option value="$PROJECT_DIR$/BinarySemaphore/Handle/HandleTest/OSHandleTest.cs" />
         <option value="$PROJECT_DIR$/BinarySemaphore/Handle/IOSHandle.cs" />
-        <option value="$PROJECT_DIR$/BinarySemaphore/AtomicBool/AtomicBool.cs" />
         <option value="$PROJECT_DIR$/BinarySemaphore/Semaphore/IMutex.cs" />
         <option value="$PROJECT_DIR$/BinarySemaphore/Handle/OSHandle.cs" />
         <option value="$PROJECT_DIR$/BinarySemaphore/Handle/HandleTest/OSHandleServiceTest.cs" />
+        <option value="$PROJECT_DIR$/BinarySemaphore/AtomicBool/AtomicBool.cs" />
         <option value="$PROJECT_DIR$/BinarySemaphore/Program.cs" />
       </list>
     </option>
@@ -116,6 +111,7 @@
       <updated>1602871881620</updated>
       <workItem from="1602871884268" duration="11550000" />
       <workItem from="1603023484472" duration="13401000" />
+      <workItem from="1603117069146" duration="2841000" />
     </task>
     <servers />
   </component>
@@ -140,21 +136,25 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="300" key="GridCell.Tab.0.bottom" timestamp="1603040127403">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1238" height="187" key="GridCell.Tab.0.bottom" timestamp="1603119937605">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="187" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1603119937605" />
     <state width="1877" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603040127403" />
-    <state width="1877" height="300" key="GridCell.Tab.0.center" timestamp="1603040127403">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1238" height="187" key="GridCell.Tab.0.center" timestamp="1603119937605">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="187" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1603119937605" />
     <state width="1877" height="300" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603040127403" />
-    <state width="1877" height="300" key="GridCell.Tab.0.left" timestamp="1603040127403">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1238" height="187" key="GridCell.Tab.0.left" timestamp="1603119937605">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="187" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1603119937605" />
     <state width="1877" height="300" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603040127403" />
-    <state width="1877" height="300" key="GridCell.Tab.0.right" timestamp="1603040127403">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1238" height="187" key="GridCell.Tab.0.right" timestamp="1603119937605">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="187" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1603119937605" />
     <state width="1877" height="300" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603040127403" />
     <state width="1877" height="71" key="GridCell.Tab.1.bottom" timestamp="1603038756493">
       <screen x="0" y="0" width="1920" height="1040" />
